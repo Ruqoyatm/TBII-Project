@@ -1,0 +1,357 @@
+.hero {
+  padding: 20px;
+}
+.hero img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+}
+.flash-sales {
+  padding: 10px 10px;
+}
+.flash-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: orangered;
+  padding: 14px 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+.flash-right a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 8px 16px;
+  border-radius: 50px;
+}
+.flash-left h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+.product-grid {
+  display: flex;
+  gap: 20px;
+}
+.product-card {
+  width: 200px;
+  background-color: white;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 0 0 10px 0;
+  position: relative;
+}
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: red;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.product-card h3 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.price {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.new-price {
+  font-weight: 800;
+}
+.old-price {
+  color: grey;
+  text-decoration: line-through;
+  font-weight: 400;
+}
+.status {
+  font-size: 13px;
+  color: #555;
+}
+.product-card h3,
+.product-card .price,
+.product-card .status {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.new-arrivals {
+  padding: 10px 10px;
+}
+.arrivals-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #102a6b;
+  padding: 14px 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+.arrivals-right a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 8px 16px;
+  border-radius: 50px;
+}
+.arrivals-left h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+.rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  padding-left: 50px;
+}
+
+.review-count {
+  color: #a0a0a0;
+  font-size: 13px;
+}
+.shop-category {
+  border-top: 1px solid lightgray;
+  padding: 30px 10px 10px 10px;
+  margin-top: 20px;
+}
+.category-header {
+  margin-bottom: 24px;
+}
+.category-header .small-title {
+  color: #888;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+.category-header h2 {
+  font-size: 24px;
+  font-weight: 800;
+  color: #111;
+}
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.category-grid a {
+  text-decoration: none;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+.category-grid a img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.category-grid a p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  padding: 12px 15px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.recommended {
+  padding: 30px 10px;
+}
+.filter-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 12px;
+  row-gap: 8px;
+  max-width: 960px; /*Added cus i want the sport and outdoor to push down*/
+  margin-bottom: 30px;
+}
+
+.filter-tabs a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #d1d5db;
+  padding: 8px 16px;
+  border-radius: 50px;
+  align-items: center;
+}
+.filter-tabs a:first-child {
+  background-color: #111;
+  color: #fff;
+  border-color: #111;
+}
+.recommend-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  /* margin-bottom: 40px; */
+}
+
+.recommend-grid .product-card {
+  width: 100%;
+  padding: 0;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.recommend-grid .product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.product-card .category {
+  font-size: 10px;
+  font-weight: 500;
+  color: orangered;
+  margin-top: 8px;
+  margin-bottom: 6px;
+}
+
+.product-card .sub-category {
+  font-size: 14px;
+  font-weight: 500;
+  color: #111;
+  line-height: 1.3;
+  margin-bottom: 4px;
+}
+
+.product-card .category,
+.product-card .sub-category,
+.product-card h3,
+.product-card .price {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.product-card h3 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+
+.new-price {
+  font-weight: 800;
+  font-size: 16px;
+  color: #000;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.add-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  margin-top: auto;
+  background-color: #111;
+  color: white;
+  border: none;
+  padding: 12px 0;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.all-products {
+  padding: 10px 10px;
+}
+.all-products-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to right, #6a1b9a, #b829d6);
+  padding: 14px 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+.header-right a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 8px 16px;
+  border-radius: 50px;
+}
+.header-left h2 {
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 12px;
+}
+.header-left p {
+  color: lightgray;
+  font-size: 12px;
+  font-weight: 300;
+}
+.see-more {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: underline;
+  gap: 8px;
+  margin: 20px 0;
+  color: #111;
+}
+.features-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f0581e;
+  padding: 30px 20px;
+  margin-top: 50px;
+}
+
+.features-bar .feature {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.features-bar .feature:first-child {
+  border-left: none;
+}
+
+.features-bar .feature h3 {
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.features-bar .feature p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 12px;
+}
