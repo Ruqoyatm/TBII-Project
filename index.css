@@ -6,26 +6,32 @@
   border-radius: 12px;
   display: block;
 }
-.flash-sales {
+
+.promotion-section {
   padding: 10px 10px;
 }
-.flash-header {
+.promotion-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: orangered;
   padding: 14px 20px;
   border-radius: 8px;
   margin-bottom: 30px;
 }
-.flash-right a {
+.flash-bg {
+  background-color: orangered;
+}
+.arrivals-bg {
+  background-color: #102a6b;
+}
+.promotion-right a {
   text-decoration: none;
   color: white;
   border: 1px solid white;
   padding: 8px 16px;
   border-radius: 50px;
 }
-.flash-left h2 {
+.promotion-left h2 {
   font-size: 20px;
   font-weight: 500;
   color: white;
@@ -90,30 +96,6 @@
 .product-card .status {
   padding-left: 10px;
   padding-right: 10px;
-}
-.new-arrivals {
-  padding: 10px 10px;
-}
-.arrivals-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #102a6b;
-  padding: 14px 20px;
-  border-radius: 8px;
-  margin-bottom: 30px;
-}
-.arrivals-right a {
-  text-decoration: none;
-  color: white;
-  border: 1px solid white;
-  padding: 8px 16px;
-  border-radius: 50px;
-}
-.arrivals-left h2 {
-  font-size: 20px;
-  font-weight: 500;
-  color: white;
 }
 .rating {
   display: flex;
