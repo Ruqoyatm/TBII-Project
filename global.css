@@ -9,26 +9,41 @@ body {
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 20px;
+  /* justify-content: space-between;? */
+  border: 2px solid red;
   padding: 20px 40px;
   border-bottom: 1px solid lightgrey;
 }
+
+.logo {
+  border: 2px solid red;
+}
 nav img {
-  width: 80px;
+  /* width: 80px; */
+  /* border: 2px solid green; */
+  width: 100%;
+  max-width: 80px;
+  height: 34px;
 }
 nav ul {
   display: flex;
   align-items: center;
   gap: 20px;
   list-style: none;
-  margin-left: 40px;
-  margin-right: auto;
+  margin-left: 20px;
+  /* margin-right: auto; */
+  border: 2px solid green;
 }
 nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: #18181b;
   cursor: pointer;
-  white-space: nowrap;
+  /* white-space: nowrap; */
+  /* border: 2px solid red; */
+  font-size: 13.2px;
+  font-weight: bolder;
+  font-style: normal;
 }
 .categories-btn {
   border: 1px solid lightgrey;
@@ -42,7 +57,8 @@ nav ul li a {
   border: 1px solid lightgrey;
   border-radius: 6px;
   overflow: hidden;
-  margin-right: 50px;
+  /* margin-right: 50px; */
+  border: 2px solid blue;
 }
 .search-bar input {
   border: none;
@@ -61,18 +77,27 @@ nav ul li a {
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 25px;
+  border: 2px solid yellow;
 }
 .nav-actions a {
   text-decoration: none;
   color: #333;
+  display: flex;
+  align-items: center;
+  gap: 3px;
 }
 nav ul li a,
 .nav-actions a {
   font-weight: 400;
+  font-size: 13px;
 }
-nav ul li a:hover {
+nav ul li a:hover,
+.nav-actions a:hover {
   color: orange;
+}
+.search-bar:focus-within {
+  border-color: orange;
 }
 .newsletter {
   display: flex;
@@ -305,4 +330,55 @@ nav ul li a i {
 nav ul li a .fa-chevron-down {
   margin-right: 0;
   margin-left: 6px;
+}
+
+.account-dropdown {
+  position: relative;
+}
+
+/* the dropdown card */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  padding: 12px;
+  min-width: 200px;
+  list-style: none;
+  z-index: 100;
+}
+
+.dropdown-menu.show {
+  display: flex;
+  gap: 12px;
+}
+
+.dropdown-menu li {
+  margin-bottom: 8px;
+}
+.dropdown-menu li:last-child {
+  margin-bottom: 0;
+}
+
+.dropdown-menu li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+}
+
+/* make Register the black button like the target */
+.dropdown-menu li:last-child a {
+  background: #111;
+  color: white;
+  border-color: #111;
 }
