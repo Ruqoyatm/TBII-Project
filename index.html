@@ -43,17 +43,41 @@
         <div class="search-bar">
           <input type="text" placeholder="Search products, brands and co" />
           <!--search icon here later-->
-          <button class="search-btn">Search</button>
+          <button class="search-btn"><i class="fa-solid fa-search"></i></button>
         </div>
         <div class="nav-actions">
-          <!--user icon and dropdown here later-->
-          <a href="#">Account</a>
+          <div class="account-dropdown" id="accountBtn">
+            <!-- user icon and dropdown here later -->
+            <a href="#"
+              ><i class="fa-solid fa-user"></i>Account<i
+                class="fa-solid fa-chevron-down"
+              ></i
+            ></a>
+            <ul class="dropdown-menu" id="accountMenu">
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-right-to-bracket"></i>Sign In</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-user-plus"></i>Register</a>
+              </li>
+            </ul>
+          </div>
           <!--headset icon and dropdown arrow here later-->
-          <a href="#">Support</a>
+          <a href="#"
+            ><i class="fa-solid fa-headset"></i>Support<i
+              class="fa-solid fa-chevron-down"
+            ></i
+          ></a>
           <!--globe icon and dropdown later-->
-          <a href="#">Language</a>
+          <a href="#"
+            ><i class="fa-solid fa-globe"></i>Language<i
+              class="fa-solid fa-chevron-down"
+            ></i
+          ></a>
           <!--shopping cart icon later-->
-          <a href="#">Cart</a>
+          <a href="#"><i class="fa-solid fa-shopping-cart"></i>Cart</a>
         </div>
       </nav>
     </header>
