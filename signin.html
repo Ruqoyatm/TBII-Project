@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+  <head>
+    <title>TBII</title>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="signin.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="script.js" defer></script>
+    <script src="signin.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img src="Images/logo.jpg" alt="Tbii logo" />
+          </a>
+        </div>
+        <ul>
+          <li>
+            <a href="best-selling.html"
+              ><i class="fa-solid fa-fire"></i> Best-Selling</a
+            >
+          </li>
+          <!--flash icon go here later-->
+          <li>
+            <a href="New-in.html"><i class="fa-solid fa-bolt"></i>New In</a>
+          </li>
+          <li class="categories-btn">
+            <a href="#"
+              ><i class="fa-solid fa-bars"></i>Categories<i
+                class="fa-solid fa-chevron-down"
+              ></i></a
+            ><!--this is where the space will be the icons and the text-->
+          </li>
+        </ul>
+        <div class="search-bar">
+          <input type="text" placeholder="Search products, brands and co" />
+          <!--search icon here later-->
+          <button class="search-btn"><i class="fa-solid fa-search"></i></button>
+        </div>
+        <div class="nav-actions">
+          <div class="account-dropdown" id="accountBtn">
+            <!-- user icon and dropdown here later -->
+            <a href="#"
+              ><i class="fa-solid fa-user"></i>Account<i
+                class="fa-solid fa-chevron-down"
+              ></i
+            ></a>
+            <ul class="dropdown-menu" id="accountMenu">
+              <li>
+                <a href="signin.html"
+                  ><i class="fa-solid fa-right-to-bracket"></i>Sign In</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-user-plus"></i>Register</a>
+              </li>
+            </ul>
+          </div>
+          <!--headset icon and dropdown arrow here later-->
+          <a href="#"
+            ><i class="fa-solid fa-headset"></i>Support<i
+              class="fa-solid fa-chevron-down"
+            ></i
+          ></a>
+          <!--globe icon and dropdown later-->
+          <a href="#"
+            ><i class="fa-solid fa-globe"></i>Language<i
+              class="fa-solid fa-chevron-down"
+            ></i
+          ></a>
+          <!--shopping cart icon later-->
+          <a href="#"><i class="fa-solid fa-shopping-cart"></i>Cart</a>
+        </div>
+      </nav>
+    </header>
+    <div class="auth-card signin-card">
+      <div class="logo">
+        <img src="Images/logo-transparent-logo.webp" alt="TBII logo" />
+        <p>Your favourite online store</p>
+      </div>
+
+      <h2>Welcome back</h2>
+      <p class="subtitle">Sign in to continue shopping</p>
+
+      <div class="divider">
+        <span>OR SIGN IN WITH EMAIL</span>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" id="email" placeholder="you@example.com" />
+      </div>
+
+      <div class="form-group password-field">
+        <div class="label-row">
+          <label for="password">Password</label>
+          <a href="#" class="forgot">Forgot?</a>
+        </div>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+        />
+        <i class="fa-solid fa-eye" id="togglePassword"></i>
+      </div>
+
+      <button type="button" id="signin-btn">
+        <i class="fa-solid fa-right-to-bracket"></i> Sign In
+      </button>
+
+      <p id="message"></p>
+
+      <p class="signup-link">
+        Don't have an account?
+        <b><a href="register.html">Create one free</a></b>
+      </p>
+    </div>
+    <footer>
+      <!-- Row 1: the columns -->
+      <div class="footer-columns">
+        <div class="footer-brand">
+          <img src="Images/logo.jpg" alt="TBII logo" />
+          <p>
+            Canada's online marketplace for authentic products, great deals, and
+            coast-to-coast delivery.
+          </p>
+          <div class="social-icons">
+            <a href="#"><!-- instagram icon --></a>
+            <a href="#"><!-- facebook icon --></a>
+            <a href="#"><!-- tiktok icon --></a>
+            <a href="#"><!-- x icon --></a>
+            <a href="#"><!-- youtube icon --></a>
+            <a href="#"><!-- pinterest icon --></a>
+          </div>
+          <p>
+            <!-- mail icon -->
+            support@tbii.ca
+          </p>
+          <p>
+            <!-- pin icon -->
+            5800 Ambler Drive, Mississauga, Ontario, Canada
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3>COMPANY</h3>
+          <ul>
+            <li><a href="#">About TBII</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <!-- etc -->
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>SUPPORT</h3>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Returns & Refunds</a></li>
+            <li><a href="#">Shipping</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>SHOP</h3>
+          <ul>
+            <li><a href="#">All Products</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Deals</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Row 2: payment strip -->
+      <div class="footer-payments">
+        <span
+          ><!-- lock icon -->
+          SECURE CHECKOUT</span
+        >
+        <!-- visa, mastercard, paypal, apple pay, stripe, interac icons -->
+      </div>
+
+      <!-- Row 3: bottom bar -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 TBII. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

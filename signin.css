@@ -1,0 +1,186 @@
+nav {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 1000;
+}
+/* center the card on the page */
+body {
+  background: #f5f5f5;
+}
+
+.auth-card {
+  margin: 60px auto;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+.signin-card {
+  max-width: 480px;
+}
+/* dark header with the logo */
+.auth-card .logo {
+  background: #1a1a1a;
+  padding: 40px;
+  text-align: center;
+}
+
+.auth-card .logo img {
+  width: 60px;
+  margin-bottom: 12px;
+}
+
+.auth-card .logo p {
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* white body — push everything below the dark header inward */
+.auth-card h2,
+.auth-card .subtitle,
+.auth-card .divider,
+.auth-card .form-group,
+.auth-card #signin-btn,
+.auth-card #message,
+.auth-card .signup-link {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.auth-card h2 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
+.auth-card .subtitle {
+  color: #777;
+  margin-bottom: 24px;
+}
+
+/* the OR divider */
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  color: #999;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #ddd;
+}
+
+/* form fields */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.form-group input {
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #f0581e;
+}
+
+/* password field — eye positioning */
+.password-field {
+  position: relative;
+}
+.password-field input {
+  padding-right: 44px;
+}
+.password-field i {
+  position: absolute;
+  right: 16px;
+  bottom: 18px;
+  /* top: 42px; */
+  cursor: pointer;
+  color: #888;
+}
+.label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.label-row label {
+  margin-bottom: 0;
+}
+
+.forgot {
+  color: #f0581e;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.forgot:hover {
+  text-decoration: underline;
+}
+
+/* the black Sign In button */
+#signin-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: calc(100% - 80px); /* full width minus the left+right margins */
+  background: #111;
+  color: white;
+  border: none;
+  padding: 16px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 8px;
+}
+#signin-btn:hover {
+  background: #333;
+}
+
+/* message + signup link */
+#message {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.signup-link {
+  text-align: center;
+  color: #777;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+.signup-link b {
+  color: #111;
+  cursor: pointer;
+}
+#signin-btn:hover {
+  background: #f0581e;
+}

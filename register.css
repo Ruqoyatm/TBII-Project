@@ -1,0 +1,49 @@
+.register-card {
+  max-width: 560px;
+}
+.form-row {
+  display: flex;
+  gap: 16px;
+}
+.form-row .form-group {
+  flex: 1; /* each takes half */
+  min-width: 0;
+}
+.form-row input {
+  width: 100%;
+  box-sizing: border-box;
+}
+#register-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: calc(100% - 80px); /* full width minus the left+right margins */
+  background: #111;
+  color: white;
+  border: none;
+  padding: 16px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 8px;
+}
+#register-btn:hover {
+  background: #f0581e;
+}
+.checkbox-row {
+  display: flex;
+  align-items: flex-start; /* checkbox aligns to top of text */
+  gap: 10px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.checkbox-row input {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0; /* checkbox stays square, doesn't shrink */
+  accent-color: #f0581e;
+  margin-top: 2px;
+}
